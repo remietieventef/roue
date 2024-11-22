@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Banner</title>
+</head>
+<body>
+    <h1>Personnaliser la bannière</h1>
+    <label for="banner-text">Texte :</label>
+    <input type="text" id="banner-text" size="50">
+    <button onclick="saveBanner()">Enregistrer</button>
+
+    <script>
+        function saveBanner() {
+            const text = document.getElementById("banner-text").value;
+            alert("Bannière mise à jour : " + text);
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>

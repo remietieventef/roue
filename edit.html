@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Data</title>
+</head>
+<body>
+    <h1>Coller les données Excel ici :</h1>
+    <textarea id="excel-data" rows="10" cols="100"></textarea>
+    <button onclick="processData()">Valider</button>
+    <div id="summary"></div>
+    <button onclick="returnToIndex()">Retour à l'accueil</button>
+
+    <script>
+        function processData() {
+            const data = document.getElementById("excel-data").value;
+            // Traitement des données et affichage du récapitulatif
+            const summary = document.getElementById("summary");
+            summary.innerHTML = "<h2>Résumé</h2><p>Durées par équipe...</p>";
+        }
+
+        function returnToIndex() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
